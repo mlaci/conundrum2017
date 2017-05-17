@@ -1,0 +1,258 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext';
+* {
+  box-sizing: border-box;
+}
+.inline-form {
+  display: flex;
+}
+.inline-form input {
+  min-width: 1px;
+  flex: 1;
+}
+.font {
+  font-family: 'Roboto', sans-serif;
+}
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+}
+.hidden {
+  display: none !important;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  display: flex;
+}
+nav {
+  max-width: 500px;
+  background-color: #cccccc;
+  color: black;
+  font-size: 18px;
+}
+nav ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  white-space: nowrap;
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40px;
+}
+nav ul li span {
+  padding: 5px 0;
+}
+nav ul li.active {
+  border-left: 5px solid black;
+  padding-left: 15px;
+}
+nav ul li.completed {
+  background-color: #8cd98c;
+}
+nav ul li.completed span {
+  background: url(img/rooster.svg) right / auto 100% no-repeat;
+}
+nav ul li.available span {
+  background: url(img/hatching_chick.svg) right / auto 90% no-repeat;
+}
+nav ul li:hover {
+  background-color: #94b2d1;
+}
+nav ul li:hover:first-child {
+  background-color: #e08585;
+}
+nav ul li.logo {
+  min-height: 60px;
+}
+nav ul li.logo img {
+  width: 160px;
+}
+main {
+  flex: 100 100 1000px;
+  background-color: white;
+}
+main .inner-main {
+  background-color: #e6e6e6;
+  max-width: 800px;
+  padding: 5px 10px;
+  margin: auto;
+}
+main .inner-main * {
+  margin: 2px 0;
+  border: 0;
+}
+main .inner-main button {
+  background-color: #cccccc;
+}
+main .inner-main input {
+  padding-left: 5px;
+}
+main .inner-main input,
+main .inner-main button {
+  height: 28px;
+  font-size: 18px;
+}
+main .inner-main .active {
+  display: block !important;
+}
+main .inner-main .info {
+  display: none;
+}
+main .inner-main .info p {
+  margin: 15px 0;
+}
+main .inner-main .info p.test-text-top {
+  margin-bottom: 0;
+}
+main .inner-main .info p.test-text-top span {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+main .inner-main .info p.test-text-bottom {
+  margin-top: 0;
+}
+main .inner-main .info .logo {
+  text-align: center;
+}
+main .inner-main .info .test {
+  display: flex;
+}
+main .inner-main .info .test input {
+  min-width: 1px;
+  flex: 1;
+}
+main .inner-main .info .test input:disabled {
+  background: url(img/load.svg) right / auto 100% no-repeat #94b2d1;
+}
+main .inner-main .info .test input.match {
+  background-color: #8cd98c;
+}
+main .inner-main .info .test input.wrong {
+  background-color: #e08585;
+}
+main .inner-main .info .reset button {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background: url(img/trash.svg) center / auto 80% no-repeat #cccccc;
+}
+main .inner-main .info .reset button:active {
+  background: url(img/button.svg) center / auto 80% no-repeat #cccccc;
+}
+main .inner-main .riddle {
+  font-size: 18px;
+  display: none;
+}
+main .inner-main .riddle .url .ready {
+  text-align: right;
+}
+main .inner-main .riddle .url .add {
+  display: flex;
+}
+main .inner-main .riddle .url .add input {
+  min-width: 1px;
+  flex: 1;
+}
+main .inner-main .riddle .url .add input:disabled {
+  background: url(img/load.svg) right / auto 100% no-repeat #94b2d1;
+}
+main .inner-main .riddle .url .add input.wrong {
+  background-color: #e08585;
+}
+main .inner-main .riddle .url .add input:focus {
+  background-color: white;
+}
+main .inner-main .riddle > img {
+  width: 100%;
+}
+main .inner-main .riddle .text {
+  display: flex;
+}
+main .inner-main .riddle .text input {
+  min-width: 1px;
+  flex: 1;
+}
+main .inner-main .riddle ul {
+  display: flex;
+  flex-flow: column-reverse;
+  padding: 0;
+}
+main .inner-main .riddle ul li {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  padding: 2px;
+  padding-left: 5px;
+}
+main .inner-main .riddle ul li.wait {
+  background-color: white;
+}
+main .inner-main .riddle ul li.in-progress {
+  background: url(img/load.svg) right / auto 100% no-repeat #94b2d1;
+}
+main .inner-main .riddle ul li.wrong {
+  background-color: #e08585;
+}
+main .inner-main .riddle ul li.match {
+  background-color: #8cd98c;
+  order: 1;
+}
+@media (min-width: 500px) and (min-height: 380px) {
+  main {
+    overflow-y: scroll;
+  }
+  nav li {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 500px) and (max-height: 380px) {
+  body {
+    height: auto;
+  }
+  body nav li {
+    flex-grow: 1;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    display: block;
+  }
+  nav ul li {
+    min-height: 2em;
+    align-items: center;
+  }
+  nav ul li span {
+    padding-right: 35px;
+  }
+}
+@media (max-width: 650px) {
+  .info img {
+    width: 100%;
+  }
+}
+@media (max-width: 180px) {
+  nav ul li {
+    padding: 0 5px;
+  }
+  nav ul li.active {
+    border-left: 5px solid black;
+    padding-left: 0;
+  }
+  nav ul li.logo img {
+    width: 100%;
+  }
+}

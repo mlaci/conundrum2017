@@ -1,0 +1,17 @@
+{
+  "name": "conundrum2017",
+  "version": "1.0.0",
+  "description": "image riddle site",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server index.html",
+    "compile": "lessc style.less style.css"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "less": "^2.7.2",
+    "lite-server": "^2.3.0"
+  }
+}

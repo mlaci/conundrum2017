@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 640" width="640" height="640">
+<defs>
+    <mask id="mask-1">
+        <rect width="640" height="640" fill="#ffffff"></rect>
+        <circle cx="320" cy="320" r="270"></circle>
+    </mask>
+    <mask id="mask-2">
+        <rect width="640" height="640" fill="#ffffff"></rect>
+        <circle cx="270" cy="270" r="40"></circle>
+        <circle cx="270" cy="370" r="40"></circle>
+        <circle cx="370" cy="270" r="40"></circle>
+        <circle cx="370" cy="370" r="40"></circle>
+    </mask>
+</defs>
+    <circle cx="320" cy="320" r="320" mask="url(#mask-1)" fill="#424242"></circle>
+    <circle cx="320" cy="320" r="220" mask="url(#mask-2)" fill="#424242"></circle>
+</svg>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>conundrum 2017</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+    <script src="lib/argon2.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="logo active"><img src="img/conundrum-small.png"/></li>
+        <li>
+          <span>1. feladat</span>
+        </li>
+        <li>
+          <span>2. feladat</span>
+        </li>
+        <li>
+          <span>3. feladat</span>
+        </li>
+        <li>
+          <span>4. feladat</span>
+        </li>
+        <li>
+          <span>5. feladat</span>
+        </li>
+        <li>
+          <span>6. feladat</span>
+        </li>
+        <li>
+          <span>7. feladat</span>
+        </li>
+        <li>
+          <span>8. feladat</span>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="inner-main">
+        <div class="info active">
+          <p class="logo"><img src="img/conundrum-small.png"/></p>
+          <h3>Helló!</h3>
+          <p>Ez egy szóviccekre épülő képrejtvény oldal.</p>
+          <p>Ezt úgy kell érteni, hogy a kép és a megoldás együtt egy szójátékot ad ki, vagy a kép szójátékon keresztül vezet el a megoldáshoz, vagy valamilyen hasonló formátumra épülnek a feladatok.</p>
+          <p>A megfejtéseket szöveges formában kell megadnod. A megoldás lehet akár egy szó vagy egy mondat hosszúságú is. A rendszer csak pontos egyezéseket fogad el. Minden karakternek egyeznie kell a megoldás megfelelő karakterével, így ha elég biztos vagy a megfejtésedben, de mégsem egyezik, érdemes megpróbálni különböző variációkat, pl. kis-nagybetűk, írásjelek, másik írásmód.</p>
+          <p>A feladatokat sorban kell megoldanod. Ha sikerült megoldanod az egyiket, akkor kapod meg következőhöz tartozó képet. Persze enélkül is próbálkozhatsz, addig egy kérdőjel jelenik meg a kép mezőben.</p>
+          <p>Az kép felett található url gomb és mező arra szolgál, hogy külön is megadhassam a neked a kép linkjét, anélkül hogy megoldottad volna a megelőző rejtvényt, ha elakadtál egy nehéz feladat megfejtésében.</p>
+          <p>Az oldalon található minden információ felhasználható a megfejtésben.</p>
+          <p class="test-text-top">Ez egy teszt mező, ha rossz megfejtést adsz meg piros lesz, ha jó megfejtést zöldre vált. A helyes megoldás az idézőjelek közötti szöveg: "<span>Ennek működnie kellene</span>"</p>
+          <div class="test">
+            <input placeholder="teszt"/>
+            <button>mehet</button>
+          </div>
+          <p class="test-text-bottom">Ha sokáig kék marad, valamilyen technikai probléma van.</p>
+          <p class="reset">Az oldal eltárolja a válaszaidat és megfejtéseidet, így azok nem vesznek el ha elhagyod az oldalt.<br/>
+             Ha törölni szeretnéd ezeket, akkor itt egy gomb: <button></button></p>
+          <p>Írni a <a href="mailto:conundrum2017@outlook.com">conundrum2017@outlook.com</a>-ra tudsz, ha:</p>
+          <ul>
+            <li>Segítségre van szükséged a megfejtésben</li>
+            <li>Technikai problémáid vannak az oldal használatával</li>
+            <li>Bármilyen észrevételed van</li>
+          </ul>
+          <p>A legtöbb asztali böngészőben működni fog az oldal, a mobilos böngészőket nem tudom, küldj visszajelzést.</p>
+        </div>
+        <div class="riddle" id="rid1">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid2">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid3">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid4">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid5">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid6">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid7">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+        <div class="riddle" id="rid8">
+          <div class="url">
+            <div class="ready">
+              <button>url</button>
+            </div>
+            <div class="add hidden">
+              <input type="url"/>
+              <button class="add">megnyit</button>
+              <button class="cancel">mégse</button>
+            </div>
+          </div>
+          <img src=""/>
+          <div class="text">
+            <input/>
+            <button>mehet</button>
+          </div>
+          <ul>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div id="pnaclListener"></div>
+    <script src="hash.js"></script> 
+    <script src="riddles.js"></script> 
+    <script src="index.js"></script>  
+    <script src="generate.js"></script>
+  </body>
+</html>
