@@ -2,7 +2,7 @@
   "program": {
     "portable": {
       "pnacl-translate": {
-        "url": "/dist/argon2.pexe"
+        "url": "./dist/argon2.pexe"
       }
     }
   }
