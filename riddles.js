@@ -1,185 +1,124 @@
-var timeCodeString = '2017-04-01T12:00+02:00';
+var timeCodeString = '2017-05-16T12:00+02:00';
 var initRiddles = [
-	{},
-	{
-		"answer": null,
-		"urlHash": "ef75p0l-4oMOhE7tXu5KntByYjUJ_suY",
-		"urlVerification": {
-			"salt": "f1b003ea248e2ad9d31572205788a585cf7062ebaacb2c21",
-			"hash": "1e30ce9541a6b586893c84b3dd2c2bc66f22586b47fc5ccc"
-		},
-		"answerVerification": {
-			"salt": "cfd2d2b1ca7237ec7d922ab0a115ca3c249ece3ca4180900",
-			"hash": "5847b958e599f08be3f8570950b282836e34848418fc855c"
-		},
-		"nextUrlSalt": "b2e5e544e4753d39c751856d95c3755b4a69da07de080a58",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": null,
-		"urlVerification": {
-			"salt": "42071ab6651f55b132716bb7643bdf7903151bab04417601",
-			"hash": "60cf073d5cb3eff74927cb60bb069207fa7f6f6d2817d12b"
-		},
-		"answerVerification": {
-			"salt": "c57c0970fda20615c2b7ed6acd8a3dac466b77e823b5f601",
-			"hash": "1f0e82d0245f1c7465e1a99a6e0e7606a75c51bedc7a125d"
-		},
-		"nextUrlSalt": "52d4cb578c5b08b56bbc64c40dae304574863b192c1f2bd6",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": "4L73xsiDJSTZ9S0uTOL7elV4UwKuAOIb",
-		"urlVerification": {
-			"salt": "d4820629c55d4c153866917c2a67d82fe2ab33323ac407e7",
-			"hash": "062ef674472e98d02cebfebd01b84d8cf9b4062dd088eea1"
-		},
-		"answerVerification": {
-			"salt": "64b3d0585865f20869bd8520c36f8f0a45ba0bf5ccd455a0",
-			"hash": "1166ed785d2b05366c99c0d22da51159a329eb7415c6eeb3"
-		},
-		"nextUrlSalt": "a4fa5b30893d49c90e0cc984bdd68063408fa9d779dbb965",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": "Jec8C0RGkwJeAbNwJlvzVb_6BaciSHvI",
-		"urlVerification": {
-			"salt": "207910888168186e7bb6522fa06342f230db9e31e8bd2cd6",
-			"hash": "45bd37cee437ee9e0f6090a8f8016b7b8751e9723660f6f6"
-		},
-		"answerVerification": {
-			"salt": "f365ac2fffa035e113ff41ee39be505a3c8723fc09e3f419",
-			"hash": "415f355fd5ed3e12a6e24e9fca24fb61916aca51b671511e"
-		},
-		"nextUrlSalt": "07614b2b3aa86ad7673009a2cd8952e48e475bf90d845b07",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": "byRS2uYE_1C9Dk2cJMneAwhpfB16ZtP8",
-		"urlVerification": {
-			"salt": "de8b84b52b2631478d5076d95591ca2b29f6e17a95b7f3a4",
-			"hash": "735b6ad789940772ec9f83884a378224dc91c5eac672ef4b"
-		},
-		"answerVerification": {
-			"salt": "7c44331b5e0b68c4259a2af1dcd90c4f5e891c80e34fc60c",
-			"hash": "dbeb478aada043aee5f59721c362699930da4e94d97e30ce"
-		},
-		"nextUrlSalt": "bcd2981b709f6af82a2944df28c6504e2fde7b2f40411f95",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": "iB8X_BTMsqghLhlsMMST8CiVWWYFB63f",
-		"urlVerification": {
-			"salt": "2b4fa4a58ab53298daf2e305c1e5c7f9576fc337f994a3ef",
-			"hash": "05338cc715f58b56de5570fbe4769d42913c63db539542af"
-		},
-		"answerVerification": {
-			"salt": "cba27f1cb75c20c60855413a389bfd4ec0f7a55cf448a5c3",
-			"hash": "7fe4e46d3fe453678bd3e69668d1bbf9c48d5d9db828d97d"
-		},
-		"nextUrlSalt": "6536865a8f667fea899dc857b26ac2cb7930e06186a197b1",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": "V13IJhKr8VUTXcbplAnGRF2-q26WcGpf",
-		"urlVerification": {
-			"salt": "b63543cbbae32b93567427b2058e515b2147bd4287eee59c",
-			"hash": "b5e4a0b309dca0bf7c883e2f99b83ac672cf20b6ebafb818"
-		},
-		"answerVerification": {
-			"salt": "da8bd1495430c9c8424c6b7116b91603c1d3ac26ca013cb0",
-			"hash": "5ceab57423de9f254bed268395d1eb85e55dc5807c8f8ed4"
-		},
-		"nextUrlSalt": "8289099078c4fe58e82c1ec448b88446dbd9891632875179",
-		"wrongAnswers": []
-	},
-	{
-		"answer": null,
-		"urlHash": "DDBvtfToezv7gslP-2gKo2pZ6A5V_h8f",
-		"urlVerification": {
-			"salt": "8636cee3722b081b96e9bfaf03fe3bf7083100c39483c692",
-			"hash": "9378f9406f02e4fe4e147d4ed2cfb3841c10e2f816471c31"
-		},
-		"answerVerification": {
-			"salt": "850bea2f06fee4a8f3039ac8af43e32241725ad085445e74",
-			"hash": "612486b24cc68026e67fb5930ae0ebecc4ed9671cfe0af58"
-		},
-		"nextUrlSalt": "59444d06e4db8f7a0176464d5cf45413f9bda713711584a4",
-		"wrongAnswers": []
-	}
-];
-
-
-function generete(answers, links){
-  var riddles = [{}];
-  var nextUrlHash = hexToBitdo64(getSalt());
-
-  function genereteRiddle(i){
-    var riddle = {
-      answer: null,
-			imgUrl: null,
-      urlHash: nextUrlHash,
-      urlVerification: {
-        salt: getSalt(), 
-        hash: null
-      },
-      answerVerification: {
-        salt: getSalt(),
-        hash: null
-      },
-      nextUrlSalt: getSalt(),
-      wrongAnswers: [],
-    };
-
-    /*return hash('https://bit.do/'+riddle.urlHash,riddle.urlVerification.salt)
-    .then(function(hash1){
-      riddle.urlVerification.hash = hash1;
-    })
-    .then(function(){return hash(answers[i],riddle.answerVerification.salt)})
-    .then(function(hash2){
-      riddle.answerVerification.hash = hash2;
-    })
-    .then(function(){return hash(answers[i],riddle.nextUrlSalt)})
-    .then(function(hash3){
-      nextUrlHash = hexToBitdo64(hash3);
-      return riddle;
-    });*/
-
-    var p1 = hash(links[i],riddle.urlVerification.salt)
-    .then(function f1(hash1){
-      riddle.urlVerification.hash = hash1;
-    })
-    var p2 = hash(answers[i],riddle.answerVerification.salt)
-    .then(function f2(hash2){
-      riddle.answerVerification.hash = hash2;
-    })
-    var p3 = hash(answers[i],riddle.nextUrlSalt)
-    .then(function f3(hash3){
-      nextUrlHash = hexToBitdo64(hash3);
-    });
-    return Promise.all([p1,p2,p3]).then(function(){return riddle});
+  {},
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": "x_Jxu-HYiW3X_AGbxKbpxJFRHAjczwCE",
+    "urlVerification": {
+      "salt": "7613d46941296d0f16e959a7a3894147c1553bde2d340f51",
+      "hash": "268580f185a8a9b825ec49e8c76cb7a38db210c54dd967de"
+    },
+    "answerVerification": {
+      "salt": "3b635269169dbb18aebcea07e91508ba87a2e32a1fd21dc0",
+      "hash": "e1f7c573edc63306b1adc5d0f6082520f0e0d49ea668cace"
+    },
+    "nextUrlSalt": "bead3a1e8c5e38db76cb0a367b3383ea7199749c4431f78d",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "b3d0fddca51c24e9b3e2f3d643e2b9a4179ccf42749c955a",
+      "hash": "ac7d8d487de2de3ce6b7f4ccd99b9af0bdc45b1010f25298"
+    },
+    "answerVerification": {
+      "salt": "a7aea1c218ce6e1d17e3c0e702d7bb9e9fbefbd352eeafc7",
+      "hash": "14b2cfc9d714be558bfb4efa510f6f96e26134d1d7f0afdd"
+    },
+    "nextUrlSalt": "b17b12fa3bf3ed46119c9a50d8a93914ffd898b575823cd6",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "234b17e2d8fab26653ca19ca2427bf363c7150c9aa94ef6f",
+      "hash": "544ddcf08238d43673f1391264886f12867da36f67216329"
+    },
+    "answerVerification": {
+      "salt": "6745e0f30890c9545101369d6927f3779604382ded9047a9",
+      "hash": "0528bd79a36299317e9175907cbface2c3a0a0c0e4df1eb3"
+    },
+    "nextUrlSalt": "46c26d8635c5766eacd782ba9178602fe5f0f0415b1377bb",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "3bc4866c6e92494ad6e0e90dcf26e1a854a527b26b010408",
+      "hash": "17df0ce5254639eebc3ff79474567d5b61de07c9e8726cc8"
+    },
+    "answerVerification": {
+      "salt": "9a661c85aa86f946e50d9de118fb5f509bc5cd359dafd71b",
+      "hash": "240733c3e97cae98425ff5d8aac7e5f8bbb2ea1876238a21"
+    },
+    "nextUrlSalt": "ad5fda3259dacd829f19a3138cedac2210b8628a05200cb7",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "9b64d123c48095795b35b60de5a9c2b115643bc55107f2fc",
+      "hash": "fcd89a243ba8459250d7b7c2cbcac2adae9c1157da8b0af6"
+    },
+    "answerVerification": {
+      "salt": "b07351db84b4f3965623dcc2f0e0ca301753665eee02a49f",
+      "hash": "ed6f978c166d69b03b1cb8c5f3508d352fec7cf998764d29"
+    },
+    "nextUrlSalt": "38d2c353841c5e7cb469752d9b92a43103775719c7492bb1",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "0720ad8118abf9b88d7646c4b20c97a85a1be800135bb973",
+      "hash": "d5d0a0b558fde6ee0f064befe58d592e276b48ae3fc82cc4"
+    },
+    "answerVerification": {
+      "salt": "2902eb6f500fd38280053c63c0411f463e87d8d542b1a6b0",
+      "hash": "26c4e8f5c4f33c613f64563378cec615bfe47dce7a09863e"
+    },
+    "nextUrlSalt": "808f9058e553ef8eb1be998d932342596f07297019c890c4",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "bfe9dd82a2c841f5035af4b7203d16044a4c90f2230e318b",
+      "hash": "b9bc97ebecf69b96823cfb0904858ebfc451a213bf526cf6"
+    },
+    "answerVerification": {
+      "salt": "fddb6d154b89e9cf8ba29441ee2e620ab20438390527ccc1",
+      "hash": "d5504d8bb1529d9ac37067e99c476e4119af043b73081fb9"
+    },
+    "nextUrlSalt": "37eca729b93f84ba5f0aa08ff07fed2a6ef2c6b4228ce2ca",
+    "wrongAnswers": []
+  },
+  {
+    "answer": null,
+    "imgUrl": null,
+    "urlHash": null,
+    "urlVerification": {
+      "salt": "ed77dd74f0679ca12d29d84c223e0b1f9bae609f27649408",
+      "hash": "522e2795f7d841b2f264d845c9418e79d0171f52785ece3c"
+    },
+    "answerVerification": {
+      "salt": "41260aac688a2d1b9696f7cb832d73cdd7c4e3e7b5ce6df6",
+      "hash": "bad9d375aedad325cf63592d2819339b646daeebc84b7d74"
+    },
+    "nextUrlSalt": "6981aceb41b28e9ba8695e6e520e5955767f09e2b98264e3",
+    "wrongAnswers": []
   }
-
-  function generateNextRiddle(i){
-    return genereteRiddle(i).then(function(riddle){
-      riddles.push(riddle);
-      if(i<answers.length-1){
-        return generateNextRiddle(++i);
-      }
-      else{
-        return riddles;
-      }
-    });
-  }
-
-  generateNextRiddle(0).then(function(riddles){
-    console.log(JSON.stringify(riddles));
-  })
-
-}
+]
